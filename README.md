@@ -84,7 +84,7 @@ Add validations to the `Scientist` model:
 Add validations to the `Mission` model:
 
 - must have a `name`, a `scientist` and a `planet`
-- a `scientist` cannot join the same `mission` twice
+- a `scientist` cannot go on missons to the same `planet` twice
 
 ## Routes
 
@@ -118,8 +118,7 @@ scientist.
 
 If the `Scientist` exists, return JSON data in the format below. **Note**: you will
 need to serialize the data for this response differently than for the
-`GET /scientists` route. Make sure to include an array of missions for each
-scientist.
+`GET /scientists` route. Make sure to include an array of planets that each scientist has visited.
 
 ```json
 {
